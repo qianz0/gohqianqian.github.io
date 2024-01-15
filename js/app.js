@@ -58,6 +58,43 @@ function studentSys() {
     popup.classList.toggle("show");
 }
 
+function marcoPopup() {
+    var popup = document.getElementById("marcoPopup");
+    popup.classList.toggle("show");
+}
+
+function bluestonePopup() {
+    var popup = document.getElementById("bluestonePopup");
+    popup.classList.toggle("show");
+}
+
+function tciPopup() {
+    var popup = document.getElementById("tciPopup");
+    popup.classList.toggle("show");
+}
+
+function accessPopup() {
+    var popup = document.getElementById("accessPopup");
+    popup.classList.toggle("show");
+}
+
+function mystPopup() {
+    var popup = document.getElementById("mystPopup");
+    popup.classList.toggle("show");
+}
+
+function swasPopup() {
+    var popup = document.getElementById("swasPopup");
+    popup.classList.toggle("show");
+}
+
+function goldstarPopup() {
+    var popup = document.getElementById("goldstarPopup");
+    popup.classList.toggle("show");
+}
+
+
+
 /*----------------Change Active Link - scroll------------------*/
 
 window.addEventListener("scroll",()=>{
@@ -112,7 +149,7 @@ prev_btn.addEventListener("click", (event) => {
 }) 
 
 next_btn.addEventListener("click", (event) => {
-    if(currentIndex === 5){
+    if(currentIndex === 12){
         currentIndex = 0
     }else{
         currentIndex++;

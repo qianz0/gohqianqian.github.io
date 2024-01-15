@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,65 +15,80 @@
 
 
     <style>
+        .link:hover {
+            color: var(--main-color-1);
+        }
+
         /* Popup container - can be anything you want */
         .popup {
-          position: relative;
-          display: inline-block;
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-        
+
         /* The actual popup */
         .popup .popuptext {
-          visibility: hidden;
-          width: 160px;
-          background-color: #555;
-          color: #fff;
-          text-align: center;
-          border-radius: 6px;
-          padding: 8px 0;
-          position: absolute;
-          z-index: 1;
-          bottom: 125%;
-          left: 50%;
-          margin-left: -80px;
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
         }
-        
+
         /* Popup arrow */
         .popup .popuptext::after {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          margin-left: -5px;
-          border-width: 5px;
-          border-style: solid;
-          border-color: #555 transparent transparent transparent;
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
         }
-        
+
         /* Toggle this class - hide and show the popup */
         .popup .show {
-          visibility: visible;
-          -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
         }
-        
+
         /* Add animation (fade in the popup) */
         @-webkit-keyframes fadeIn {
-          from {opacity: 0;} 
-          to {opacity: 1;}
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-        
+
         @keyframes fadeIn {
-          from {opacity: 0;}
-          to {opacity:1 ;}
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
     </style>
 
 </head>
+
 <body>
     <header>
         <nav class="container">
@@ -95,9 +111,9 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
-                
+
                 <i class="uil uil-moon toggle-btn"></i>
-            
+
             </div>
 
         </nav>
@@ -111,7 +127,7 @@
                     <h3 class="sub-heading">Singapore Polytechnic</h3>
                     <h1 class="heading">Goh Qian Qian</h1>
                     <p class="text">I am a student currently studying in Singapore Polytechnic.</p>
-                    
+
                     <div class="cta">
                         <a href="mailto:gohqianqian0@gmail.com" class="btn">Contact me</a>
                         <a href="#about" download class="btn secondary-btn">Read More</a>
@@ -122,12 +138,12 @@
                 <div class="showcase-image">
                     <img src="./assets/IMG_7074.jpg" class="person" alt="image">
                 </div>
-            
+
             </div>
         </section>
 
         <section class="skills section" id="about">
-
+            <!--images that show when u click on the zoom icon-->
             <div class="modal">
                 <div class="modal-overlay">
                     <div class="slider-wrap">
@@ -140,6 +156,13 @@
                             <img src="./assets/MiniRes.JPG" alt="">
                             <img src="./assets/mobileapp3.JPG" alt="">
                             <img src="./assets/studentSystem.JPG" alt="">
+                            <img src="./assets/marco-industries.png" alt="">
+                            <img src="./assets/bluestone.png" alt="">
+                            <img src="./assets/tcihousekeeping.png" alt="">
+                            <img src="./assets/access-electrical.png" alt="">
+                            <img src="./assets/myst-ambience.png" alt="">
+                            <img src="./assets/swas.png" alt="">
+                            <img src="./assets/goldstar.png" alt="">
                         </div>
                         <div class="next-btn navigation">
                             <i class="uil uil-angle-right-b"></i>
@@ -147,7 +170,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="container">
                 <div class="skills-box">
 
@@ -161,17 +184,18 @@
 
                     <div class="box-desc">
                         <p class="text">
-                            My name is Qian Qian. I am currently a student
+                            My name is Qian Qian. I am currently a 3rd year student
                             studying Information Technology in Singapore
                             Polytechnic. I have since
                             learnt different programming languages and put them into practice by
-                            working on several projects using languages like Javascript, 
-                            Java and more. I have also been taking every opportunity that I have to upskill 
+                            working on several projects using languages like Javascript,
+                            Java and more. I have also been taking every opportunity that I have to upskill
                             myself through Coursera courses to pursue my interest in IT and programming.
-                                           
-                           <br><br>
-                           <span style="font-weight: 500;">
-                             SKILLS: Java, JavaScript, HTML, CSS, MySQL, MSSQL, React Native, Postman, Teamwork, Communication
+
+                            <br><br>
+                            <span style="font-weight: 500;">
+                                SKILLS: Java, JavaScript, HTML, CSS, MySQL, MSSQL, React Native, Postman, Teamwork,
+                                Communication
                             </span>
                         </p>
                     </div>
@@ -192,7 +216,9 @@
                                 <button class="filter-btn" data-filter=".javascript">JavaScript</button>
                                 <button class="filter-btn" data-filter=".java">Java</button>
                                 <button class="filter-btn" data-filter=".mobile">Mobile App</button>
-                            </div>   
+                                <button class="filter-btn" data-filter=".ecommerce">E-commerce</button>
+                                <button class="filter-btn" data-filter=".corporate">Corporate Websites</button>
+                            </div>
 
                         </div>
 
@@ -210,17 +236,17 @@
 
                                             <span class="prt-icon" style="--i: 0.15s">
                                                 <div class="popup" onclick="itStore()">
-                                                    <i class="uil uil-ellipsis-h" ></i>
+                                                    <i class="uil uil-ellipsis-h"></i>
                                                     <span class="popuptext" id="itStore" style="font-size: 10px;">
                                                         A Full Stack Web Application done using
                                                         <span style="color: rgb(120, 214, 183);">
                                                             MySQL, JavaScript, NodeJS, Express, HTML
-                                                        and CSS.
+                                                            and CSS.
                                                         </span>
                                                     </span>
                                                 </div>
                                             </span>
-                                           
+
                                         </div>
 
                                     </div>
@@ -240,21 +266,21 @@
                                             <span class="prt-icon zoom-icon" style="--i: 0s">
                                                 <i class="uil uil-search-plus"></i>
                                             </span>
-                                                            
+
                                             <span class="prt-icon" style="--i: 0.15s">
                                                 <div class="popup" onclick="tourWeb()">
-                                                    <i class="uil uil-ellipsis-h" ></i>
+                                                    <i class="uil uil-ellipsis-h"></i>
                                                     <span class="popuptext" id="tourWeb" style="font-size: 10px;">
                                                         A full stack web application done using
-                                                    <span style="color: rgb(120, 214, 183);"> 
-                                                            Java, JSP and MySQL in Eclipse. 
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Java, JSP and MySQL in Eclipse.
                                                         </span>
                                                         <br>
                                                         (Implemented MVC)
                                                     </span>
                                                 </div>
                                             </span>
-                                            
+
                                         </div>
 
                                     </div>
@@ -277,9 +303,10 @@
 
                                             <span class="prt-icon" style="--i: 0.15s">
                                                 <div class="popup" onclick="miniJavascript()">
-                                                    <i class="uil uil-ellipsis-h" ></i>
-                                                    <span class="popuptext" id="miniJavascript" style="font-size: 10px;">
-                                                        A mini program done using 
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="miniJavascript"
+                                                        style="font-size: 10px;">
+                                                        A mini program done using
                                                         <span style="color: rgb(120, 214, 183);">
                                                             Javascript.
                                                         </span>
@@ -310,11 +337,11 @@
 
                                             <span class="prt-icon" style="--i: 0.15s">
                                                 <div class="popup" onclick="toDoApp()">
-                                                    <i class="uil uil-ellipsis-h" ></i>
+                                                    <i class="uil uil-ellipsis-h"></i>
                                                     <span class="popuptext" id="toDoApp" style="font-size: 10px;">
-                                                        A To-Do App done using 
+                                                        A To-Do App done using
                                                         <span style="color: rgb(120, 214, 183);">
-                                                        React Native.
+                                                            React Native.
                                                         </span>
                                                     </span>
                                                 </div>
@@ -341,15 +368,15 @@
 
                                             <span class="prt-icon" style="--i: 0.15s">
                                                 <div class="popup" onclick="studentSys()">
-                                                    <i class="uil uil-ellipsis-h" ></i>
+                                                    <i class="uil uil-ellipsis-h"></i>
                                                     <span class="popuptext" id="studentSys" style="font-size: 10px;">
-                                                        A mini student management system done using 
-                                                        <span style="color: rgb(120, 214, 183);">         
-                                                        Java on NetBeans. (GUI)
+                                                        A mini student management system done using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Java on NetBeans. (GUI)
                                                         </span>
                                                     </span>
-                                                </div>    
-                                            </span>                                                                       
+                                                </div>
+                                            </span>
                                         </div>
 
                                     </div>
@@ -360,6 +387,238 @@
                                 </div>
                             </div>
 
+
+                            <!-- Marco Industries-->
+                            <div class="mix prt-card ecommerce">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/marco-industries.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="marcoPopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="marcoPopup" style="font-size: 10px;">
+                                                        An e-commerce site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Prestashop (an open soruce ecommerce platform) and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>Marco Industries</h3>
+                                    <a href="https://marco-industries.com.sg/" target="_blank"
+                                        class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
+                            <!-- Bluestone Coporation-->
+                            <div class="mix prt-card ecommerce">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/bluestone.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="bluestonePopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="bluestonePopup"
+                                                        style="font-size: 10px;">
+                                                        An e-commerce site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Prestashop (an open soruce ecommerce platform) and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>Bluestone Coporation</h3>
+                                    <a href="https://bluestone-corp.com/" target="_blank"
+                                        class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
+                            <!-- TCI Housekeeping-->
+                            <div class="mix prt-card ecommerce">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/tcihousekeeping.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="tciPopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="tciPopup" style="font-size: 10px;">
+                                                        An e-commerce site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Prestashop (an open soruce ecommerce platform) and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>TCI Housekeeping</h3>
+                                    <a href="https://tcihousekeeping.sg/" target="_blank"
+                                        class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
+                            <!-- Access Electrical-->
+                            <div class="mix prt-card ecommerce">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/access-electrical.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="accessPopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="accessPopup" style="font-size: 10px;">
+                                                        An e-commerce site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Prestashop (an open soruce ecommerce platform) and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>Access Electrical</h3>
+                                    <a href="https://accesselectrical.efusiondemo.info/" target="_blank"
+                                        class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
+                            <!-- Myst Ambience-->
+                            <div class="mix prt-card ecommerce">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/myst-ambience.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="mystPopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="mystPopup" style="font-size: 10px;">
+                                                        An e-commerce site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Prestashop (an open soruce ecommerce platform) and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>Myst Ambience</h3>
+                                    <a href="https://www.mystambience.sg/" target="_blank"
+                                        class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
+                            <!-- Swas award-->
+                            <div class="mix prt-card corporate">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/swas.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="swasPopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="swasPopup" style="font-size: 10px;">
+                                                        Corporate site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Wordpress and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>SWAS Award</h3>
+                                    <a href="https://awards.swas.sg/" target="_blank" class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
+                            <!-- gold star award-->
+                            <div class="mix prt-card corporate">
+                                <div class="prt-image">
+                                    <div class="img">
+                                        <img src="./assets/goldstar.png" alt="">
+
+                                        <div class="prt-overlay">
+                                            <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                <i class="uil uil-search-plus"></i>
+                                            </span>
+
+                                            <span class="prt-icon" style="--i: 0.15s">
+                                                <div class="popup" onclick="goldstarPopup()">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                    <span class="popuptext" id="goldstarPopup" style="font-size: 10px;">
+                                                        Corporate site built using
+                                                        <span style="color: rgb(120, 214, 183);">
+                                                            Wordpress and CSS
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="prt-desc">
+                                    <h3>Gold Star Aviation</h3>
+                                    <a href="http://goldstar-aviation.com/" target="_blank"
+                                        class="btn secondary-btn sm">View Website</a>
+                                </div>
+                            </div>
+
                         </div>
                     </section>
                 </div>
@@ -367,8 +626,9 @@
         </section>
 
         <br>
-        
-        <section class="imageSlider section" id ="viewmore">
+
+
+        <section class="imageSlider section" id="viewmore">
 
             <div class="skills-wrap">
                 <h1 class="heading">Snapshots of my Projects</h1>
@@ -383,19 +643,23 @@
                 <button id="third" class="filter-btn" data-filter="third">Mini JavaScript Program</button>
                 <button id="fourth" class="filter-btn" data-filter="fourth">To-Do App</button>
                 <button id="fifth" class="filter-btn" data-filter="fifth">Mini Student Management System</button>
-            </div>   
+
+                <button id="six" class="filter-btn" data-filter="six">E-commerce sites</button>
+                <button id="seven" class="filter-btn" data-filter="seven">Corporate sites</button>
+
+            </div>
 
             <script>
-                 window.onload = myMain;
+                window.onload = myMain;
 
                 function myMain() {
-                     document.getElementById("alphabet").onclick = buton;
+                    document.getElementById("alphabet").onclick = buton;
                 }
 
                 function buton(e) {
                     if (e.target.tagName == 'BUTTON') {
 
-                        if(e.target.id === "first"){
+                        if (e.target.id === "first") {
 
                             document.getElementById('itstore').style.display = 'inline';
                             document.getElementById('tourweb').style.display = 'none';
@@ -404,7 +668,7 @@
                             document.getElementById('studentsystem').style.display = 'none';
 
 
-                        }else if(e.target.id === "second"){
+                        } else if (e.target.id === "second") {
 
                             document.getElementById('itstore').style.display = 'none';
                             document.getElementById('tourweb').style.display = 'inline';
@@ -412,7 +676,7 @@
                             document.getElementById('mobileapp').style.display = 'none';
                             document.getElementById('studentsystem').style.display = 'none';
 
-                        }else if(e.target.id === "third"){
+                        } else if (e.target.id === "third") {
 
                             document.getElementById('itstore').style.display = 'none';
                             document.getElementById('tourweb').style.display = 'none';
@@ -421,7 +685,7 @@
                             document.getElementById('studentsystem').style.display = 'none';
 
                         }
-                        else if(e.target.id === "fourth"){
+                        else if (e.target.id === "fourth") {
 
                             document.getElementById('itstore').style.display = 'none';
                             document.getElementById('tourweb').style.display = 'none';
@@ -430,7 +694,7 @@
                             document.getElementById('studentsystem').style.display = 'none';
 
                         }
-                        else if(e.target.id === "fifth"){
+                        else if (e.target.id === "fifth") {
 
                             document.getElementById('itstore').style.display = 'none';
                             document.getElementById('tourweb').style.display = 'none';
@@ -438,11 +702,30 @@
                             document.getElementById('mobileapp').style.display = 'none';
                             document.getElementById('studentsystem').style.display = 'inline';
 
+                        } else if (e.target.id === "six") {
+
+                            document.getElementById('itstore').style.display = 'none';
+                            document.getElementById('tourweb').style.display = 'none';
+                            document.getElementById('minijavascript').style.display = 'none';
+                            document.getElementById('mobileapp').style.display = 'none';
+                            document.getElementById('studentsystem').style.display = 'none';
+                            document.getElementById('ecommerce-sites').style.display = 'inline';
+
+                        } else if (e.target.id === "seven") {
+
+                            document.getElementById('itstore').style.display = 'none';
+                            document.getElementById('tourweb').style.display = 'none';
+                            document.getElementById('minijavascript').style.display = 'none';
+                            document.getElementById('mobileapp').style.display = 'none';
+                            document.getElementById('studentsystem').style.display = 'none';
+                            document.getElementById('ecommerce-sites').style.display = 'none';
+                            document.getElementById('corporate-sites').style.display = 'inline';
+
                         }
                     }
                 }
 
-              
+
             </script>
 
             <div class="mix prt-card first" id="itstore" style="display:none;">
@@ -460,31 +743,31 @@
 
                 <ul id="imgList" class="ul-image">
                     <li class="li-image">
-                        <img src="./assets/ITWeb1.JPG"/>
+                        <img src="./assets/ITWeb1.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/ITWeb2.JPG"/>
+                        <img src="./assets/ITWeb2.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/ITWeb3.JPG"/>
+                        <img src="./assets/ITWeb3.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/ITWeb4.JPG"/>
+                        <img src="./assets/ITWeb4.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/ITWeb5.JPG"/>
+                        <img src="./assets/ITWeb5.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/ITWeb6.JPG"/>
+                        <img src="./assets/ITWeb6.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/ITWeb7.JPG"/>
+                        <img src="./assets/ITWeb7.JPG" />
                     </li>
                 </ul>
 
@@ -495,10 +778,10 @@
             </div>
 
             <div class="mix prt-card second" id="tourweb" style="display:none;">
-                
+
                 <p class="text">
                     A full stack web application done using
-                    Java, JSP and MySQL in Eclipse. 
+                    Java, JSP and MySQL in Eclipse.
                 </p>
 
                 <div class="scroll-arrow" id="scroll-left2">
@@ -507,51 +790,51 @@
 
                 <ul id="imgList2" class="ul-image">
                     <li class="li-image">
-                        <img src="./assets/TourWeb1.jpg"/>
+                        <img src="./assets/TourWeb1.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb2.JPG"/>
+                        <img src="./assets/TourWeb2.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb3.jpg"/>
+                        <img src="./assets/TourWeb3.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb4.jpg"/>
+                        <img src="./assets/TourWeb4.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb5.jpg"/>
+                        <img src="./assets/TourWeb5.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb6.jpg"/>
+                        <img src="./assets/TourWeb6.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb7.jpg"/>
+                        <img src="./assets/TourWeb7.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb8.jpg"/>
+                        <img src="./assets/TourWeb8.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb9.jpg"/>
+                        <img src="./assets/TourWeb9.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb10.jpg"/>
+                        <img src="./assets/TourWeb10.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb11.jpg"/>
+                        <img src="./assets/TourWeb11.jpg" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/TourWeb12.jpg"/>
+                        <img src="./assets/TourWeb12.jpg" />
                     </li>
                 </ul>
 
@@ -563,9 +846,9 @@
 
 
             <div class="mix prt-card third" id="minijavascript" style="display:none;">
-                
+
                 <p class="text">
-                    A mini JavaScript program done using 
+                    A mini JavaScript program done using
                     (Arrays, Functions etc) in Visual Studio Code
                 </p>
 
@@ -575,23 +858,23 @@
 
                 <ul id="imgList3" class="ul-image">
                     <li class="li-image">
-                        <img src="./assets/MiniRes1.JPG"/>
+                        <img src="./assets/MiniRes1.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/MiniRes2.JPG"/>
+                        <img src="./assets/MiniRes2.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/MiniRes3.JPG"/>
+                        <img src="./assets/MiniRes3.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/MiniRes4.JPG"/>
+                        <img src="./assets/MiniRes4.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/MiniRes.JPG"/>
+                        <img src="./assets/MiniRes.JPG" />
                     </li>
                 </ul>
 
@@ -603,9 +886,9 @@
 
 
             <div class="mix prt-card fourth" id="mobileapp" style="display:none;">
-                
+
                 <p class="text">
-                    A To-Do App done using 
+                    A To-Do App done using
                     React Native.
                 </p>
 
@@ -615,15 +898,15 @@
 
                 <ul id="imgList4" class="ul-image">
                     <li class="li-image">
-                        <img src="./assets/mobileapp1.JPG"/>
+                        <img src="./assets/mobileapp1.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/mobileapp2.JPG"/>
+                        <img src="./assets/mobileapp2.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/mobileapp3.JPG"/>
+                        <img src="./assets/mobileapp3.JPG" />
                     </li>
                 </ul>
 
@@ -634,7 +917,7 @@
             </div>
 
             <div class="mix prt-card fifth" id="studentsystem" style="display:none;">
-                
+
                 <p class="text">
                     A mini student management system done using Java on NetBeans. (GUI)
                 </p>
@@ -645,20 +928,20 @@
 
                 <ul id="imgList5" class="ul-image">
                     <li class="li-image">
-                        <img src="./assets/studentSystem1.JPG"/>
+                        <img src="./assets/studentSystem1.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/studentSystem2.JPG"/>
+                        <img src="./assets/studentSystem2.JPG" />
                     </li>
 
                     <li class="li-image">
-                        <img src="./assets/studentSystem3.JPG"/>
+                        <img src="./assets/studentSystem3.JPG" />
                     </li>
 
-                    
+
                     <li class="li-image">
-                        <img src="./assets/studentSystem4.JPG"/>
+                        <img src="./assets/studentSystem4.JPG" />
                     </li>
                 </ul>
 
@@ -668,6 +951,42 @@
 
             </div>
 
+            <div class="mix prt-card six" id="ecommerce-sites" style="display:none;">
+
+                <p class="text">
+                    Developed multiple e-commerce sites for real clients using PrestaShop — an open-source platform —
+                    leveraging CSS, JavaScript, and PHP
+                    <br><br>
+                    <a href="https://marco-industries.com.sg/" target="_blank" class="link">1.
+                        marco-industries.com.sg</a>
+                    <br>
+                    <a href="https://bluestone-corp.com/" target="_blank" class="link">2. bluestone-corp.com</a>
+                    <br>
+                    <a href="https://tcihousekeeping.sg/" target="_blank" class="link">3. tcihousekeeping.sg</a>
+                    <br>
+                    <a href="https://accesselectrical.efusiondemo.info/" target="_blank" class="link">4.
+                        access-electrical.com (in progress)</a>
+                    <br>
+                    <a href="https://www.mystambience.sg/" target="_blank" class="link">5. mystambience.sg</a>
+                </p>
+
+            </div>
+
+            <div class="mix prt-card seven" id="corporate-sites" style="display:none;">
+
+                <p class="text">
+                    Developed multiple corporate sites for real clients using Wordpress — a web content management
+                    system —
+                    leveraging CSS and PHP.
+                    <br><br>
+                    <a href="https://awards.swas.sg/" target="_blank" class="link">1. awards.swas.sg
+                    </a>
+                    <br>
+                    <a href="https://goldstar-aviation.com/" target="_blank" class="link">2. goldstar-aviation.com (in progress)</a>
+
+                </p>
+
+            </div>
         </section>
 
         <br><br><br>
@@ -687,7 +1006,7 @@
                     </a>
                 </div>
                 <div class="landscape">
-                   <img src="./assets/792000.png" class="thank"alt="">
+                    <img src="./assets/792000.png" class="thank" alt="">
                 </div>
             </div>
         </section>
@@ -701,4 +1020,5 @@
     <script src="./js/app.js"></script>
     <script src="./js/image.js"></script>
 </body>
+
 </html>
