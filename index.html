@@ -207,6 +207,7 @@
                                 <img src="./assets/myst-ambience.png" alt="">
                                 <img src="./assets/swas.png" alt="">
                                 <img src="./assets/goldstar.png" alt="">
+                                <img src="./assets/datascience-piechart.png" alt="">
                             </div>
                             <div class="next-btn navigation">
                                 <i class="uil uil-angle-right-b"></i>
@@ -263,6 +264,7 @@
                                     <button class="filter-btn" data-filter=".mobile">Mobile App</button>
                                     <button class="filter-btn" data-filter=".ecommerce">E-commerce</button>
                                     <button class="filter-btn" data-filter=".corporate">Corporate Websites</button>
+                                    <button class="filter-btn" data-filter=".datascience">Data Science</button>
                                 </div>
 
                             </div>
@@ -706,6 +708,37 @@
                                     </div>
                                 </div>
 
+                                <!-- data science-->
+                                <div class="mix prt-card datascience">
+                                    <div class="prt-image">
+                                        <div class="img">
+                                            <img src="./assets/datascience-piechart.png" alt="">
+
+                                            <div class="prt-overlay">
+                                                <span class="prt-icon zoom-icon" style="--i: 0s">
+                                                    <i class="uil uil-search-plus"></i>
+                                                </span>
+
+                                                <span class="prt-icon" style="--i: 0.15s">
+                                                    <div class="popup" onclick="dataPopup()">
+                                                        <i class="uil uil-ellipsis-h"></i>
+                                                        <span class="popuptext" id="dataPopup" style="font-size: 10px;">
+                                                            Analyze and visualize real-world data using
+                                                            <span style="color: rgb(120, 214, 183);">
+                                                                Python
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="prt-desc">
+                                        <h3>Data Science</h3>
+                                        <a href="#viewmore" class="btn secondary-btn sm">See More</a>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -734,6 +767,7 @@
 
                     <button id="six" class="filter-btn" data-filter="six">E-commerce sites</button>
                     <button id="seven" class="filter-btn" data-filter="seven">Corporate sites</button>
+                    <button id="eight" class="filter-btn" data-filter="eight">Data Science</button>
 
                 </div>
 
@@ -799,6 +833,7 @@
                                 document.getElementById('studentsystem').style.display = 'none';
                                 document.getElementById('ecommerce-sites').style.display = 'inline';
                                 document.getElementById('corporate-sites').style.display = 'none';
+                                document.getElementById('datascience').style.display = 'none';
 
                             } else if (e.target.id === "seven") {
 
@@ -808,7 +843,20 @@
                                 document.getElementById('mobileapp').style.display = 'none';
                                 document.getElementById('studentsystem').style.display = 'none';
                                 document.getElementById('ecommerce-sites').style.display = 'none';
-                                document.getElementById('corporate-sites').style.display = 'inline';
+                                document.getElementById('corporate-sites').style.display = 'inline';     
+                                document.getElementById('datascience').style.display = 'none';
+
+                            }
+                            else if (e.target.id === "eight") {
+
+                                document.getElementById('itstore').style.display = 'none';
+                                document.getElementById('tourweb').style.display = 'none';
+                                document.getElementById('minijavascript').style.display = 'none';
+                                document.getElementById('mobileapp').style.display = 'none';
+                                document.getElementById('studentsystem').style.display = 'none';
+                                document.getElementById('ecommerce-sites').style.display = 'none';
+                                document.getElementById('corporate-sites').style.display = 'none';
+                                document.getElementById('datascience').style.display = 'inline';
 
                             }
                         }
@@ -1106,6 +1154,45 @@
                     </p>
 
                 </div>
+
+                <div class="mix prt-card eight" id="datascience" style="display:none;">
+
+                    <p class="text">
+                        Analyze and visualize real-world data using the Python programming language. Learning
+                        how to apply Python packages to describe data, explore data and to create visualizations that
+                        can help gain useful insights
+                    </p>
+
+                    <div class="scroll-arrow" id="scroll-left6">
+                        &#8592;
+                    </div>
+
+                    <ul id="imgList6" class="ul-image">
+                        <li class="li-image">
+                            <img src="./assets/datascience-piechart.png" />
+                        </li>
+
+                        <li class="li-image">
+                            <img src="./assets/datascience-charts.png" />
+                        </li>
+
+                        <li class="li-image">
+                            <img src="./assets/datascience-linechart.png" />
+                        </li>
+
+                        <li class="li-image">
+                            <img src="./assets/datascience-barchart.png"/>
+                        </li>
+                    </ul>
+
+                    <div class="scroll-arrow" id="scroll-right6" onclick="scrollRight6()">
+                        &#8594;
+                    </div>
+
+                </div>
+
+
+
             </section>
 
             <br><br><br>

@@ -53,6 +53,11 @@ function toDoApp() {
     popup.classList.toggle("show");
 }
 
+function recipeApp() {
+    var popup = document.getElementById("recipeApp");
+    popup.classList.toggle("show");
+}
+
 function studentSys() {
     var popup = document.getElementById("studentSys");
     popup.classList.toggle("show");
@@ -93,6 +98,10 @@ function goldstarPopup() {
     popup.classList.toggle("show");
 }
 
+function dataPopup() {
+    var popup = document.getElementById("dataPopup");
+    popup.classList.toggle("show");
+}
 
 
 /*----------------Change Active Link - scroll------------------*/
@@ -149,7 +158,7 @@ prev_btn.addEventListener("click", (event) => {
 }) 
 
 next_btn.addEventListener("click", (event) => {
-    if(currentIndex === 12){
+    if(currentIndex === 14){
         currentIndex = 0
     }else{
         currentIndex++;

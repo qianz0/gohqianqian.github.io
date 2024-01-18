@@ -14,6 +14,9 @@ var scrollLeft4 = document.getElementById('scroll-left4');
 var scrollRight5 = document.getElementById('scroll-right5');
 var scrollLeft5 = document.getElementById('scroll-left5');
 
+var scrollRight6 = document.getElementById('scroll-right6');
+var scrollLeft6 = document.getElementById('scroll-left6');
+
 
 scrollRight.addEventListener('click', (event) => {
     imgList.scrollBy(750, 0);
@@ -60,4 +63,12 @@ scrollRight5.addEventListener('click', (event) => {
   
   scrollLeft5.addEventListener('click', (event) => {
     imgList5.scrollBy(-750, 0);
+});
+
+scrollRight6.addEventListener('click', (event) => {
+  imgList6.scrollBy(750, 0);
+});
+
+scrollLeft6.addEventListener('click', (event) => {
+  imgList6.scrollBy(-750, 0);
 });
